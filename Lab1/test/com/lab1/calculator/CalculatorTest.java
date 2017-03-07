@@ -35,5 +35,11 @@ public class CalculatorTest {
 	public void dividetest() {
 		assertEquals(3, calculator.divide(6, 2));
 	}
+	
+	@Test
+	public void isEquals() {
+		assertTrue(calculator.isEqual(2, 2));
+		assertFalse(calculator.isEqual(2, 3));
+	}
 
 }
